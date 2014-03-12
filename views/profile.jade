@@ -4,6 +4,9 @@ block content
 
 	.main
 
-		h1 Logged in
+		if user.twitter.token
 
+		h1 Hi, #{user.twitter.displayName}
+
+		p @#{user.twitter.username}
 		a.btn(href="/logout") Log out
